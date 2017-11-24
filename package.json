@@ -1,0 +1,20 @@
+{
+  "name": "ratify",
+  "version": "1.0.0",
+  "description": "JSON schema validation tool",
+  "main": "./lib/index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JSON",
+    "schema",
+    "validation"
+  ],
+  "author": "Sumeet Sarkar",
+  "license": "MIT"
+}
