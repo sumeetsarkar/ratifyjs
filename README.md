@@ -2,6 +2,18 @@
 
 > Ratify is a fast & small JSON schema validation library
 
+### Installation
+    npm install ratify-js
+
+
+### Apply Schema on Data
+
+```js
+const { ratify } = require('ratify-js');
+ratify(schema, data);
+```
+
+
 ### Define schema
 
 ```js
@@ -85,11 +97,4 @@ module.exports = {
     pin: '',
   },
 };
-```
-
-### Apply schema test on data
-
-```js
-const { ratify } = require('../lib');
-ratify(schema, data);
 ```
