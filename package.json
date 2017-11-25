@@ -1,5 +1,5 @@
 {
-  "name": "ratify",
+  "name": "ratify-js",
   "version": "1.0.0",
   "description": "JSON schema validation tool",
   "main": "./lib/index.js",
