@@ -6,43 +6,84 @@
 
 ```js
 module.exports = {
-  type: 'Array',
-  length: {
-    max: 10,
-  },
-  default: [],
-  children: {
-    type: 'Object',
-    fields: {
-      firstName: {
+  type: 'Object',
+  fields: {
+    id: {
+      type: 'Number',
+      required: true,
+    },
+    firstName: {
+      type: 'String',
+      required: true,
+    },
+    lastName: {
+      type: 'String',
+      default: '',
+    },
+    age: {
+      type: 'Number',
+      required: true,
+      range: {
+        min: 18,
+      },
+    },
+    hobbies: {
+      type: 'Array',
+      length: {
+        min: 1,
+        max: 5,
+      },
+      children: {
         type: 'String',
-        required: true,
-        test: /^[a-zA-Z]{2,12}/,
       },
-      lastName: {
+    },
+    sports: {
+      type: 'Array',
+      default: [],
+      children: {
         type: 'String',
-        default: '',
       },
-      age: {
-        type: 'Number',
-        required: true,
-        range: {
-          min: 18,
-        },
-      },
-      languages: {
-        type: 'Array',
-        length: {
-          min: 1,
-          max: 5,
-        },
-        required: true,
-        children: {
+    },
+    address: {
+      type: 'Object',
+      fields: {
+        street: {
           type: 'String',
-        }
-      }
-    }
-  }
+          required: true,
+        },
+        city: {
+          type: 'String',
+          required: true,
+        },
+        state: {
+          type: 'String',
+          required: true,
+        },
+        pin: {
+          type: 'String',
+        },
+      },
+    },
+  },
+};
+```
+
+### A sample JSON conforming to the above schema
+
+```js
+module.exports = {
+  id: 123456,
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 25,
+  hobbies: ['reading', 'cinema'],
+  sports: ['volley-ball', 'badminton'],
+  address: {
+    street: '890 Fifth Avenue, Manhattan',
+    city: 'New York City',
+    state: 'New York',
+    pin: '',
+  },
 };
 ```
 
