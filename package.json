@@ -4,19 +4,29 @@
   "description": "JSON schema validation tool",
   "main": "./lib/index.js",
   "directories": {
-    "example": "examples",
     "lib": "lib"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint lib examples",
-    "lint:fix": "eslint --fix lib examples"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sumeetsarkar/ratify.git"
+  },
+  "homepage": "https://github.com/sumeetsarkar/ratify/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/sumeetsarkar/ratify/issues"
   },
   "keywords": [
     "JSON",
     "schema",
     "validation"
   ],
-  "author": "Sumeet Sarkar",
-  "license": "MIT"
+  "author": "Sumeet Sarkar <sumeetsarkar4@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint lib examples",
+    "lint:fix": "eslint --fix lib examples"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0"
+  }
 }
