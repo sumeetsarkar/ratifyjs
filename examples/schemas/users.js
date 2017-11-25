@@ -32,8 +32,8 @@ module.exports = {
         required: true,
         children: {
           type: 'String',
-        }
-      }
-    }
-  }
+        },
+      },
+    },
+  },
 };
