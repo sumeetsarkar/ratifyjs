@@ -1,6 +1,6 @@
-# Ratify
+# Ratify JS
 
-> Ratify is a fast & small JSON schema validation library
+> Ratify JS is a fast & small JSON schema validation library
 
 ### Installation
     npm install ratify-js
