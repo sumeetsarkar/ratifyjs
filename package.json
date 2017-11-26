@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:sumeetsarkar/ratify.git"
+    "url": "git@github.com:sumeetsarkar/ratifyjs.git"
   },
-  "homepage": "https://github.com/sumeetsarkar/ratify/blob/master/README.md",
+  "homepage": "https://github.com/sumeetsarkar/ratifyjs/blob/master/README.md",
   "bugs": {
-    "url": "https://github.com/sumeetsarkar/ratify/issues"
+    "url": "https://github.com/sumeetsarkar/ratifyjs/issues"
   },
   "keywords": [
     "JSON",
