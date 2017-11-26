@@ -8,6 +8,7 @@ module.exports = {
     firstName: {
       type: 'String',
       required: true,
+      test: /^[a-zA-Z]{2,12}/,
     },
     lastName: {
       type: 'String',
