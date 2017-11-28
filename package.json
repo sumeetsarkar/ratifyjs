@@ -16,8 +16,12 @@
   },
   "keywords": [
     "JSON",
+    "validation",
     "schema",
-    "validation"
+    "JSON validation",
+    "JSON validator",
+    "JSON schema",
+    "JSON schema validator"
   ],
   "author": "Sumeet Sarkar <sumeetsarkar4@gmail.com>",
   "license": "MIT",
