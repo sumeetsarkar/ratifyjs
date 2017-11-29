@@ -10,7 +10,13 @@
 
 ```js
 const { ratify } = require('ratify-js');
+
+// Usage 1 - direct approach
 ratify(schema, data);
+
+// Usage 2 - curried approach
+const schemaValidator = ratify(schema);
+schemaValidator(data);
 ```
 
 
